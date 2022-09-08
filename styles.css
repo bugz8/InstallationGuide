@@ -1,0 +1,159 @@
+body {
+    padding-top: 10px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-top: 21px;
+    margin-bottom: 10.500px;
+}
+
+h2 {
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-top: 11px;
+    margin-bottom: 10.500px;
+}
+
+.firstHeader {
+    text-align: center;
+}
+
+#firstHeader {
+    padding: 0 15px;
+}
+
+#header1L {
+    display: inline-block;
+    color: #2c3e50;
+    font-size: 39px;
+    padding-right: 4.6px;
+}
+
+#header2R {
+    display: inline-block;
+    color: #B4BCC2;
+    font-size: 25.35px;
+}
+
+#header3 {
+    color: #2c3e50;
+}
+
+#container {
+    background-color: #ecf0f1;
+    margin: auto 100px;
+    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 48px 60px;
+}
+
+#lastHeadBtn {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 15px;
+    text-align: center;
+    height: 96px;
+}
+
+#infoText {
+    height: 10px;
+}
+
+#secondContainer {
+    margin-top: 35px;
+    padding: 0;
+}
+
+#thirdButtonL {
+    padding: 0;
+    text-align: center;
+}
+
+#thirdButtonR {
+    padding: 0;
+    width: 500px;
+    text-align: center;
+}
+
+#midSection {
+    text-align: left;
+    margin: 50px 100px auto 100px;
+}
+
+#aboutHeader {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    color: #2c3e55;
+}
+
+.aboutPara {
+    margin-bottom: 30px;
+    color: #2c3e55;
+    font-size: 22.5px;
+}
+
+.aboutPara2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.paraLink {
+    margin-bottom: 30px;
+    color: #18bc9c;
+    text-decoration: none;
+}
+
+.highlight1 {
+    margin-bottom: 30px;
+    background-color: #ecf0f1;
+    padding: 19px;
+}
+
+.quote {
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 1000px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    margin-bottom: 5px;
+}
+
+#quoteBlue {
+    color: #18bc9c;
+    text-decoration: underline;
+}
+
+cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    font-style: normal;
+    margin-left: 88px;
+    font-family: Georgia, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lowerSection {
+    background-color: #e74c3c;
+    padding: 19px;
+    color: #ffffff;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/eecdc1070d.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome Library-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Facebook Conversion Pixel</title>
+</head>
+<body>
+
+    <section id="firstHeader">
+        <div class="firstHeader">
+            <h1 id="header1L">Manual - Read & Install</h1>            
+            <h2 id="header3">Select version below</h2>
+        </div>
+    </section>
+    <section id="container">
+        <h1 id="header2R">for Opencart</h1>
+		<div class="row">
+            <div class="col-lg-3 col-mid-3 col-sm-12">
+                <a href="15x.html" class="center-block btn btn-lg btn-success">1.5.x</a>
+            </div>
+            <div class="col-lg-3 col-mid-3 col-sm-12">
+                <a href="2xxx.html" class="center-block btn btn-lg btn-success">2.X.X.X</a>
+            </div>
+            <div class="col-lg-3 col-mid-3 col-sm-12">
+                <a href="#" class="center-block btn btn-lg btn-success">3.x.x.x</a>
+            </div>            
+        </div>
+        <div class="row" id="lastHeadBtn">
+            <div class="alert alert-info" role="alert">
+                <p id="infoText" class="text-center"><a href="index.html">Back</a></p>
+            </div>
+        </div>
+    </section>    
+    <section id="midSection">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 id="aboutHeader">Instructions</h1>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-description"><p style="text-align: center; "><b><span style="font-size: 14px;"><u>Manual Installation</u></span></b></p><p style="text-align: left;">This extension is completely free only we charge when you want our support in installing the same. You can read the below manual and do the complete end to end installation of all the events your self.</p><p style="text-align: left;"><b>Requirement:&nbsp;</b><br></p><p style="text-align: left;">- Need FTP or Cpanel&nbsp; ( You need the ftp and admin credentials to install the same )</p><p style="text-align: left;">- Opencart Version&nbsp;1.5.6.1</p><p style="text-align: center;"><b><u>ADMIN FILES</u></b></p><p style="text-align: left;"><b><u style="background-color: rgb(255, 255, 255);">Step 1</u></b></p><p style="text-align: left;"><b>File Name</b> :&nbsp;admin/language/english/setting/setting.php</p><p style="text-align: left;"><b><font color="#0000ff" style="background-color: rgb(255, 255, 255);">After</font> this code</b>:&nbsp;</p><pre style="text-align: left;" id="codingBG">// Text</pre><p style="text-align: left;"><b>Add the below code:</b></p><pre id="codingBG">$_['text_steps']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 'Steps to create facebook Pixel(s):&lt;br/&gt;&lt;span class="help"&gt;1. Go to your facebook Pixel tab in Ads Manager.&lt;br/&gt;2. Click &lt;b&gt;Create a Pixel&lt;/b&gt;.&lt;br/&gt;3. Enter a name of your pixel. There is only one pixel per ad account, so, choose a name that represents your business.&lt;br/&gt;4. Make sure you\'ve checked the box to accept the terms.&lt;br/&gt;<span style="white-space: pre;">	</span>5. Click &lt;b&gt;Create Pixel&lt;/b&gt;.&lt;br/&gt;6. Copy the Pixel ID and paste it here.&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;';<br>$_['text_facebook_links']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Facebook links:&lt;br/&gt;&lt;span class="help"&gt;To create Facebook Conversion Pixels navigate to &lt;a href="https://www.facebook.com/ads/manage/" target="_blank"&gt;Facebook Ads Manager&lt;/a&gt; -&gt; &lt;a href="https://www.facebook.com/ads/manage/convtrack" target="_blank"&gt;Conversion Tracking&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;';<br>$_['text_help']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Help:&lt;br/&gt;&lt;span class="help"&gt;- To display a conversion pixel on the homepage (eg. yourstore.com) set Event Name to \'Other\' and Path to &lt;input value="common/home" disabled="" type="text"&gt;&lt;br/&gt;&lt;span class="help"&gt;Home - common/home&lt;br/&gt;Search - product/search&lt;br/&gt;Cart - checkout/cart&lt;br/&gt;Wishlist - account/wishlist&lt;br/&gt;Initiate Checkout - checkout/checkout&lt;br/&gt;Purchase - checkout/success&lt;br/&gt;Information - information/information&lt;span&gt;&lt;br/&gt;&lt;br/&gt;- To track traffic to other pages check out the &lt;a href="http://www.purchasetheme.com/blog/" target="_blank"&gt;documentation&lt;/a&gt; for more information&lt;br/&gt;&lt;b&gt;&lt;/b&gt;- &lt;b&gt;Value:&lt;/b&gt; for the Facebook conversion pixel on the checkout/success page, the value will always be the Order Total.&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;';<br>$_['text_f_pixel_base_code']&nbsp; &nbsp; &nbsp; &nbsp;= 'Add Pixel Base Code:';<br>$_['text_f_pixel_base_code_help']&nbsp; = '&lt;span class="help"&gt;The pixel will track visits to every page of your website.&lt;br/&gt;1. Click here to get the code &lt;a href="https://business.facebook.com/ads/manager/pixel" target="_blank"&gt;Pixel code&lt;/a&gt;&lt;br/&gt;2. Once your pixel code is created copy the code &amp; paste the Pixel Base Code ID into this field.&lt;/span&gt;';<br>$_['text_conversion_pixel_id']&nbsp; &nbsp; &nbsp;= 'Conversion Pixel ID:';<br>$_['text_event_name']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Event Name:';<br>$_['text_default_path']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Default Path:';<br>$_['text_value']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 'Value:';<br>$_['text_status']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Status:';<br>$_['text_view_content']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'View Content';<br>$_['text_home']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Home';<br>$_['text_search']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Search';<br>$_['text_add_to_cart']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 'Add To Cart';<br>$_['text_add_to_wishlist']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 'Add To Wishlist';<br>$_['text_initiate_checkout']&nbsp; &nbsp; &nbsp; &nbsp;= 'Initiate Checkout';<br>$_['text_add_payment_info']&nbsp; &nbsp; &nbsp; &nbsp; = 'Add Payment Info';<br>$_['text_purchase']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Purchase';<br>$_['text_lead']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Lead';<br>$_['text_complete_cegistration']&nbsp; &nbsp;= 'Complete Registration';<br>$_['text_other']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 'Other';<br>$_['text_enabled']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 'Enabled';<br>$_['text_disabled']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Disabled';<br>$_['text_remove']&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = 'Remove';<br>$_['text_add_conversion_pixel']&nbsp; &nbsp; = 'Add Conversion Pixel';<br>$_['text_tab_conversion_pixel']&nbsp; &nbsp; = 'Facebook Pixel Code(s)';</pre><p></p><div><br></div><p style="text-align: left;"><b><u>Step 2</u></b><br></p><p><b>File Name</b>&nbsp;:&nbsp;admin/controller/setting/setting.php</p><p><b>Find this and put below code <font color="#0000ff" style="background-color: rgb(255, 255, 255);">after</font> this</b>:&nbsp;</p><pre id="codingBG">$this-&gt;data['text_smtp'] = $this-&gt;language-&gt;get('text_smtp');</pre><p><b>Add the below code:</b></p><pre id="codingBG">$this-&gt;data['text_steps'] = $this-&gt;language-&gt;get('text_steps');<br>$this-&gt;data['text_facebook_links'] = $this-&gt;language-&gt;get('text_facebook_links');<br>$this-&gt;data['text_help'] = $this-&gt;language-&gt;get('text_help');<br>$this-&gt;data['text_f_pixel_base_code'] = $this-&gt;language-&gt;get('text_f_pixel_base_code');<br>$this-&gt;data['text_f_pixel_base_code_help'] = $this-&gt;language-&gt;get('text_f_pixel_base_code_help');<br>$this-&gt;data['text_conversion_pixel_id'] = $this-&gt;language-&gt;get('text_conversion_pixel_id');<br>$this-&gt;data['text_event_name'] = $this-&gt;language-&gt;get('text_event_name');<br>$this-&gt;data['text_default_path'] = $this-&gt;language-&gt;get('text_default_path');<br>$this-&gt;data['text_value'] = $this-&gt;language-&gt;get('text_value');<br>$this-&gt;data['text_status'] = $this-&gt;language-&gt;get('text_status');<br>$this-&gt;data['text_view_content'] = $this-&gt;language-&gt;get('text_view_content');<br>$this-&gt;data['text_home'] = $this-&gt;language-&gt;get('text_home');<br>$this-&gt;data['text_search'] = $this-&gt;language-&gt;get('text_search');<br>$this-&gt;data['text_add_to_cart'] = $this-&gt;language-&gt;get('text_add_to_cart');<br>$this-&gt;data['text_add_to_wishlist'] = $this-&gt;language-&gt;get('text_add_to_wishlist');<br>$this-&gt;data['text_initiate_checkout'] = $this-&gt;language-&gt;get('text_initiate_checkout');<br>$this-&gt;data['text_add_payment_info'] = $this-&gt;language-&gt;get('text_add_payment_info');<br>$this-&gt;data['text_purchase'] = $this-&gt;language-&gt;get('text_purchase');<br>$this-&gt;data['text_lead'] = $this-&gt;language-&gt;get('text_lead');<br>$this-&gt;data['text_complete_cegistration'] = $this-&gt;language-&gt;get('text_complete_cegistration');<br>$this-&gt;data['text_other'] = $this-&gt;language-&gt;get('text_other');<br>$this-&gt;data['text_enabled'] = $this-&gt;language-&gt;get('text_enabled');<br>$this-&gt;data['text_disabled'] = $this-&gt;language-&gt;get('text_disabled');<br>$this-&gt;data['text_remove'] = $this-&gt;language-&gt;get('text_remove');<br>$this-&gt;data['text_add_conversion_pixel'] = $this-&gt;language-&gt;get('text_add_conversion_pixel');<span style="white-space:pre">		<br></span>$this-&gt;data['text_tab_conversion_pixel'] = $this-&gt;language-&gt;get('text_tab_conversion_pixel');</pre><p><br></p><p><b><u>Step 3</u></b></p><p><b>File Name</b>&nbsp;:&nbsp;admin/controller/setting/setting.php</p><p><b>Find this and put below code <font color="#0000ff">before </font>this</b>:&nbsp;</p><pre id="codingBG">$this-&gt;template = 'setting/setting.tpl';</pre><p><b>Add the below code:</b></p><pre id="codingBG">if (isset($this-&gt;request-&gt;post['f_pixel_base_code'])) {<br><span style="white-space:pre">	</span>$this-&gt;data['f_pixel_base_code'] = $this-&gt;request-&gt;post['f_pixel_base_code'];&nbsp;<br>} else {<br><span style="white-space:pre">	</span>$this-&gt;data['f_pixel_base_code'] = $this-&gt;config-&gt;get('f_pixel_base_code');<br>}<br>$this-&gt;data['pixels'] = array();<br>if (isset($this-&gt;request-&gt;post['pixel'])) {<br><span style="white-space:pre">	</span>$this-&gt;data['pixels'] = $this-&gt;request-&gt;post['pixel'];<br>} elseif ($this-&gt;config-&gt;get('pixel')) {&nbsp;<br><span style="white-space:pre">	</span>$this-&gt;data['pixels'] = $this-&gt;config-&gt;get('pixel');<br>}</pre><p><br></p><p><b><u>Step 4</u></b></p><p><b>File Name</b>&nbsp;:&nbsp;admin/view/template/setting/setting.tpl</p><p><b>Find this code <font color="#0000ff">replace </font>with below code</b>:&nbsp;</p><pre id="codingBG">&lt;div id="tabs" class="htabs"&gt;&lt;a href="#tab-general"&gt;&lt;?php echo $tab_general; ?&gt;&lt;/a&gt;&lt;a href="#tab-store"&gt;&lt;?php echo $tab_store; ?&gt;&lt;/a&gt;&lt;a href="#tab-local"&gt;&lt;?php echo $tab_local; ?&gt;&lt;/a&gt;&lt;a href="#tab-option"&gt;&lt;?php echo $tab_option; ?&gt;&lt;/a&gt;&lt;a href="#tab-image"&gt;&lt;?php echo $tab_image; ?&gt;&lt;/a&gt;&lt;a href="#tab-ftp"&gt;&lt;?php echo $tab_ftp; ?&gt;&lt;/a&gt;&lt;a href="#tab-mail"&gt;&lt;?php echo $tab_mail; ?&gt;&lt;/a&gt;&lt;a href="#tab-fraud"&gt;&lt;?php echo $tab_fraud; ?&gt;&lt;/a&gt;&lt;a href="#tab-server"&gt;&lt;?php echo $tab_server; ?&gt;&lt;/a&gt;&lt;/div&gt;</pre><p><b>Add the below code</b><b>:</b></p><pre id="codingBG">&lt;div id="tabs" class="htabs"&gt;&lt;a href="#tab-general"&gt;&lt;?php echo $tab_general; ?&gt;&lt;/a&gt;&lt;a href="#tab-store"&gt;&lt;?php echo $tab_store; ?&gt;&lt;/a&gt;&lt;a href="#tab-local"&gt;&lt;?php echo $tab_local; ?&gt;&lt;/a&gt;&lt;a href="#tab-option"&gt;&lt;?php echo $tab_option; ?&gt;&lt;/a&gt;&lt;a href="#tab-image"&gt;&lt;?php echo $tab_image; ?&gt;&lt;/a&gt;&lt;a href="#tab-ftp"&gt;&lt;?php echo $tab_ftp; ?&gt;&lt;/a&gt;&lt;a href="#tab-mail"&gt;&lt;?php echo $tab_mail; ?&gt;&lt;/a&gt;&lt;a href="#tab-fraud"&gt;&lt;?php echo $tab_fraud; ?&gt;&lt;/a&gt;&lt;a href="#tab-server"&gt;&lt;?php echo $tab_server; ?&gt;&lt;/a&gt;&lt;a href="#tab-facebook-pixel"&gt;&lt;?php echo $text_tab_conversion_pixel; ?&gt;&lt;/a&gt;&lt;/div&gt;</pre><p><br></p><p><b><u>Step 5</u></b></p><p><b>File Name</b>&nbsp;:&nbsp;admin/view/template/setting/setting.tpl</p><p><b>Find this and put below code&nbsp;<font color="#0000ff">before&nbsp;</font>this</b>:&nbsp;<br></p><pre id="codingBG">&lt;/form&gt;</pre><p><b>Add the below code</b><b>:</b><br></p><pre id="codingBG">&lt;div id="tab-facebook-pixel"&gt;<br>&nbsp; &lt;table class="form"&gt;<br><span style="white-space:pre">	</span>&lt;tr&gt;<br><span style="white-space:pre">		</span>&lt;td colspan="4"&gt;<span style="white-space:pre">				<br></span><span style="white-space:pre">			</span>&lt;?php&nbsp;<br><span style="white-space:pre">			</span>echo $text_steps;&nbsp;<br><span style="white-space:pre">			</span>echo $text_facebook_links;&nbsp;<br><span style="white-space:pre">			</span>echo $text_help; <span style="white-space:pre">					<br></span><span style="white-space:pre">			</span>?&gt;<br><span style="white-space:pre">		</span>&lt;/td&gt;<br><span style="white-space:pre">	</span>&lt;/tr&gt;<span style="white-space:pre">			<br></span><span style="white-space:pre">	</span>&lt;tr&gt;<br><span style="white-space:pre">		</span>&lt;td colspan="3"&gt;&lt;?php echo $text_f_pixel_base_code; ?&gt;<br><span style="white-space:pre">		</span>&lt;?php echo $text_f_pixel_base_code_help; ?&gt;<br><span style="white-space:pre">		</span>&lt;/td&gt;<br><span style="white-space:pre">		</span>&lt;td&gt;&lt;input type="text" name="f_pixel_base_code" size="35" value="&lt;?php echo $f_pixel_base_code; ?&gt;" maxlength="18" /&gt;&lt;/td&gt;<br><span style="white-space:pre">	</span>&lt;/tr&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br><span style="white-space:pre">	</span>&lt;tr&gt;<br><span style="white-space:pre">		</span>&lt;td colspan="4"&gt;<br><span style="white-space:pre">			</span>&lt;table id="fcpixel" class="list"&gt;<br><span style="white-space:pre">				</span>&lt;thead&gt;<br><span style="white-space:pre">					</span>&lt;tr&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td class="left"&gt;&lt;?php echo $text_conversion_pixel_id; ?&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td class="left"&gt;&lt;?php echo $text_event_name; ?&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td class="left"&gt;&lt;?php echo $text_default_path; ?&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td class="left"&gt;&lt;?php echo $text_value; ?&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td class="left"&gt;&lt;?php echo $text_status; ?&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&lt;/tr&gt;<br><span style="white-space:pre">				</span>&lt;/thead&gt;<span style="white-space:pre">		</span>&nbsp; <span style="white-space:pre">					</span>&nbsp;&nbsp;<br><span style="white-space:pre">				</span>&lt;?php $pixel_row = 0; ?&gt;<br><span style="white-space:pre">				</span>&lt;?php foreach ($pixels as $pixel) { ?&gt;<br><span style="white-space:pre">				</span>&lt;tbody id="pixel-row&lt;?php echo $pixel_row; ?&gt;"&gt;<br><span style="white-space:pre">				</span>&lt;tr&gt;<br><span style="white-space:pre">				</span>&lt;td class="left"&gt;&lt;input name="pixel[&lt;?php echo $pixel_row; ?&gt;][pixel_id]" value="&lt;?php echo $pixel['pixel_id']; ?&gt;" type="text"&gt;&lt;/td&gt;<br><span style="white-space:pre">				</span>&lt;td class="left"&gt;<span style="white-space:pre">						<br></span><span style="white-space:pre">				</span>&lt;select id="category-&lt;?php echo $pixel_row; ?&gt;" name="pixel[&lt;?php echo $pixel_row; ?&gt;][category]" onchange="setPath(&lt;?php echo $pixel_row; ?&gt;)"&gt;<span style="white-space:pre">							<br></span><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'home') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="home" selected="selected"&gt;&lt;?php echo $text_home; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="home"&gt;&lt;?php echo $text_home; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<span style="white-space:pre">	<br></span><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'search') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="search" selected="selected"&gt;&lt;?php echo $text_search; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="search"&gt;&lt;?php echo $text_search; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<span style="white-space:pre">	<br></span><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'adds_to_cart') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="adds_to_cart" selected="selected"&gt;&lt;?php echo $text_add_to_cart; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="adds_to_cart"&gt;&lt;?php echo $text_add_to_cart; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<span style="white-space:pre">							<br></span><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'add_to_wishlist') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="add_to_wishlist" selected="selected"&gt;&lt;?php echo $text_add_to_wishlist; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="add_to_wishlist"&gt;&lt;?php echo $text_add_to_wishlist; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;&nbsp;<br><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'initiate_checkout') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="initiate_checkout" selected="selected"&gt;&lt;?php echo $text_initiate_checkout; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="initiate_checkout"&gt;&lt;?php echo $text_initiate_checkout; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;&nbsp;<br><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'add_payment_info') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="add_payment_info" selected="selected"&gt;&lt;?php echo $text_add_payment_info; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="add_payment_info"&gt;&lt;?php echo $text_add_payment_info; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<br><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'purchase') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="purchase" selected="selected"&gt;&lt;?php echo $text_purchase; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="purchase"&gt;&lt;?php echo $text_purchase; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<br><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'leads') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="leads" selected="selected"&gt;&lt;?php echo $text_lead; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="leads"&gt;&lt;?php echo $text_lead; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<br><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'key_page_views') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="key_page_views" selected="selected"&gt;&lt;?php echo $text_view_content; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="key_page_views"&gt;&lt;?php echo $text_view_content; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<br><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'registrations') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="registrations" selected="selected"&gt;&lt;?php echo $text_complete_cegistration; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="registrations"&gt;&lt;?php echo $text_complete_cegistration; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<br><span style="white-space:pre">					</span>&lt;?php if ($pixel['category'] == 'other') { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="other" selected="selected"&gt;&lt;?php echo $text_other; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } else { ?&gt;<br><span style="white-space:pre">					</span>&lt;option value="other"&gt;&lt;?php echo $text_other; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;?php } ?&gt;<br><span style="white-space:pre">				</span>&lt;/select&gt;<br><span style="white-space:pre">				<br></span><span style="white-space:pre">				</span>&lt;?php if ($pixel['category'] == 'key_page_views') { ?&gt;<br><span style="white-space:pre">				</span>&lt;div style="display:inline-block; padding-left:5px;"&gt;<br><span style="white-space:pre">					</span>&lt;select id="key-page-views-&lt;?php echo $pixel_row; ?&gt;" name="pixel[&lt;?php echo $pixel_row; ?&gt;][view]"&gt;<br><span style="white-space:pre">						</span>&lt;option value="chef" &lt;?php if($pixel['view'] == 'chef') { echo 'selected'; } ?&gt;&gt;Chef Page&lt;/option&gt;<br><span style="white-space:pre">						</span>&lt;option value="product" &lt;?php if($pixel['view'] == 'product') { echo 'selected'; } ?&gt;&gt;Product Page&lt;/option&gt;<br><span style="white-space:pre">						</span>&lt;option value="category" &lt;?php if($pixel['view'] == 'category') { echo 'selected'; } ?&gt;&gt;Category Page&lt;/option&gt;<br><span style="white-space:pre">						</span>&lt;option value="manufacturer" &lt;?php if($pixel['view'] == 'manufacturer') { echo 'selected'; } ?&gt;&gt;Manufacturer Page&lt;/option&gt;<br><span style="white-space:pre">						</span>&lt;option value="information" &lt;?php if($pixel['view'] == 'information') { echo 'selected'; } ?&gt;&gt;Information Page&lt;/option&gt;<br><span style="white-space:pre">					</span>&lt;/select&gt;<br><span style="white-space:pre">				</span>&lt;/div&gt;<span style="white-space:pre">						<br></span><span style="white-space:pre">				</span>&lt;?php } ?&gt;<br><span style="white-space:pre">				<br></span><span style="white-space:pre">				</span>&lt;?php if ($pixel['category'] == 'registrations') { ?&gt;<span style="white-space:pre">	<br></span><span style="white-space:pre">				</span>&lt;div style="display:inline-block; padding-left:5px;"&gt;<br><span style="white-space:pre">					</span>&lt;select id="registrations-&lt;?php echo $pixel_row; ?&gt;" name="pixel[&lt;?php echo $pixel_row; ?&gt;][view]" onchange="setPath2(&lt;?php echo $pixel_row; ?&gt;)"&gt;<br><span style="white-space:pre">						</span>&lt;option value="account" &lt;?php if($pixel['view'] == 'account') { echo 'selected'; } ?&gt;&gt;New Customer&lt;/option&gt;<br><span style="white-space:pre">						</span>&lt;option value="affiliate" &lt;?php if($pixel['view'] == 'affiliate') { echo 'selected'; } ?&gt;&gt;Affiliate&lt;/option&gt;<span style="white-space:pre">								<br></span><span style="white-space:pre">					</span>&lt;/select&gt;<br><span style="white-space:pre">				</span>&lt;/div&gt;&nbsp; &nbsp;<span style="white-space:pre">						<br></span><span style="white-space:pre">				</span>&lt;?php } ?&gt;<br><span style="white-space:pre">				</span>&lt;/td&gt;<br><span style="white-space:pre">				<br></span><span style="white-space:pre">				</span>&lt;td class="left" id="pixel-path-input-&lt;?php echo $pixel_row; ?&gt;"&gt;<br><span style="white-space:pre">					</span>&lt;input id="pixel-path-&lt;?php echo $pixel_row; ?&gt;" name="pixel[&lt;?php echo $pixel_row; ?&gt;][path]" value="&lt;?php echo $pixel['path']; ?&gt;" size="40" type="text"&gt;<br><span style="white-space:pre">				</span>&lt;/td&gt;<br><span style="white-space:pre">				</span>&lt;td class="left"&gt;&lt;input id="pixel-value-&lt;?php echo $pixel_row; ?&gt;" name="pixel[&lt;?php echo $pixel_row; ?&gt;][value]" value="&lt;?php echo $pixel['value']; ?&gt;" size="10" type="text"&gt;&lt;/td&gt;<br><span style="white-space:pre">				</span>&lt;td class="left"&gt;<br><span style="white-space:pre">					</span>&lt;select name="pixel[&lt;?php echo $pixel_row; ?&gt;][status]"&gt;<br><span style="white-space:pre">						</span>&lt;?php if ($pixel['status']) { ?&gt;<br><span style="white-space:pre">						</span>&nbsp; &lt;option value="1" selected="selected"&gt;&lt;?php echo $text_enabled; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">						</span>&nbsp; &lt;option value="0"&gt;&lt;?php echo $text_disabled; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">						</span>&nbsp; &lt;?php } else { ?&gt;<br><span style="white-space:pre">						</span>&nbsp; &lt;option value="1"&gt;&lt;?php echo $text_enabled; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">						</span>&nbsp; &lt;option value="0" selected="selected"&gt;&lt;?php echo $text_disabled; ?&gt;&lt;/option&gt;<br><span style="white-space:pre">						</span>&lt;?php } ?&gt;<br><span style="white-space:pre">					</span>&lt;/select&gt;<br><span style="white-space:pre">				</span>&lt;/td&gt;<br><span style="white-space:pre">				</span>&lt;td class="left"&gt;&lt;a onclick="$('#pixel-row&lt;?php echo $pixel_row; ?&gt;').remove();" class="button"&gt;&lt;?php echo $text_remove; ?&gt;&lt;/a&gt;&lt;/td&gt;<br><span style="white-space:pre">				</span>&lt;/tr&gt;<br><span style="white-space:pre">				</span>&lt;/tbody&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="white-space:pre">						<br></span><span style="white-space:pre">				</span>&lt;?php $pixel_row++; ?&gt;<br><span style="white-space:pre">				</span>&lt;?php } ?&gt;<br><span style="white-space:pre">				</span>&lt;tfoot&gt;<br><span style="white-space:pre">					</span>&lt;tr&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td colspan="5"&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&nbsp; &lt;td class="left"&gt;&lt;a onclick="addPixel();" class="button"&gt;&lt;?php echo $text_add_conversion_pixel; ?&gt;&lt;/a&gt;&lt;/td&gt;<br><span style="white-space:pre">					</span>&lt;/tr&gt;<br><span style="white-space:pre">				</span>&lt;/tfoot&gt;<br><span style="white-space:pre">			</span>&lt;/table&gt;<span style="white-space:pre">			<br></span><span style="white-space:pre">		</span>&lt;/td&gt;<br><span style="white-space:pre">	</span>&lt;/tr&gt;<br>&nbsp; &lt;/table&gt;<br>&lt;/div&gt;</pre><div><br></div><p><b><u>Step 6</u></b></p><p><b>File Name</b>&nbsp;:&nbsp;admin/view/template/setting/setting.tpl</p><p><b>Find this and put below code&nbsp;<font color="#0000ff">after&nbsp;</font>this</b>:&nbsp;</p><pre id="codingBG">//--&gt;&lt;/script&gt;</pre><p><b>Add the below code</b><b>:</b></p><pre id="codingBG">&lt;script type="text/javascript"&gt;&lt;!--<br>var pixel_row = 10;<br>// Functions<span style="white-space:pre">					<br></span>function addPixel() {<span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>html&nbsp; = '&lt;tbody id="pixel-row' + pixel_row + '"&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &lt;tr&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &nbsp; &lt;td class="left"&gt;&lt;input type="text" name="pixel[' + pixel_row + '][pixel_id]" value="" maxlength="18"/&gt;&lt;/td&gt;';&nbsp;<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">	</span> &lt;td class="left"&gt;&lt;select id="category-' + pixel_row + '" name="pixel[' + pixel_row + '][category]" onchange="setPath(' + pixel_row + ');"&gt;';<span style="white-space:pre">						<br></span><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="home"&gt;Home&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="search"&gt;Search&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="adds_to_cart"&gt;Add To Cart&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="add_to_wishlist"&gt;Add To Wishlist&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="initiate_checkout"&gt;Initiate Checkout&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="add_payment_info"&gt;Add Payment Info&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="purchase"&gt;Purchase&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="leads"&gt;Lead&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">	</span> <span style="white-space:pre">	</span>&lt;option value="key_page_views"&gt;View Content&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="registrations"&gt;Complete Registration&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">		</span>&lt;option value="other" &gt;Other&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &nbsp; &lt;/select&gt;&lt;/td&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">	</span> &lt;td class="left" id="pixel-path-input-' + pixel_row + '"&gt;&lt;input type="text" id="pixel-path-' + pixel_row + '" name="pixel[' + pixel_row + '][path]" value="" size="40" /&gt;&lt;/td&gt;';<br><span style="white-space:pre">	</span>html += '<span style="white-space:pre">	</span> &lt;td class="left"&gt;&lt;input type="text" id="pixel-value-' + pixel_row + '" name="pixel[' + pixel_row + '][value]" value="" size="10" /&gt;&lt;/td&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &nbsp; &lt;td class="left"&gt;&lt;select name="pixel[' + pixel_row + '][status]"&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &nbsp; &nbsp; &lt;option value="1" selected="selected"&gt;Enabled&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &nbsp; &nbsp; &lt;option value="0"&gt;Disabled&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &nbsp; &lt;/select&gt;&lt;/td&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &nbsp; &lt;td class="left"&gt;&lt;a onclick="$(\'#pixel-row' + pixel_row + '\').remove();" class="button"&gt;Remove&lt;/a&gt;&lt;/td&gt;';<br><span style="white-space:pre">	</span>html += '&nbsp; &lt;/tr&gt;';<br><span style="white-space:pre">	</span>html += '&lt;/tbody&gt;';<br><span style="white-space:pre">	</span>$('#fcpixel tfoot').before(html);<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>$(function () {<span style="white-space:pre">														<br></span><span style="white-space:pre">		</span>setPath(pixel_row);<span style="white-space:pre">	</span>&nbsp;<br><span style="white-space:pre">		</span>setPath2(pixel_row);<span style="white-space:pre">						<br></span><span style="white-space:pre">	</span>});<br><span style="white-space:pre">	</span>pixel_row++;<br>}<br>function setPath2(row) {<br><span style="white-space:pre">	</span>var category = $('#registrations-' + row).val();<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'account') {&nbsp;<br><span style="white-space:pre">		</span>setAccountPath(row);&nbsp;<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'affiliate') {&nbsp;<br><span style="white-space:pre">		</span>setAffiliatePath(row);&nbsp;<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>function setAccountPath(row) {<br><span style="white-space:pre">		</span>$('#pixel-path-' + row).val('account/success');<br><span style="white-space:pre">		</span>$('#pixel-path-' + row).prop('readonly', true);<span style="white-space:pre">						<br></span><span style="white-space:pre">		</span>$('#pixel-value-' + row).prop('readonly', true);<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>function setAffiliatePath(row) {<br><span style="white-space:pre">		</span>$('#pixel-path-' + row).val('affiliate/success');<br><span style="white-space:pre">		</span>$('#pixel-path-' + row).prop('readonly', true);<span style="white-space:pre">						<br></span><span style="white-space:pre">		</span>$('#pixel-value-' + row).prop('readonly', true);<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span>}<br>function setPath(row) {<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>var category = $('#category-' + row).val();<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>resetInputs(row, category);<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'home') {&nbsp;<br><span style="white-space:pre">		</span>setHomePath(row);&nbsp;<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'add_to_wishlist') {&nbsp;<br><span style="white-space:pre">		</span>setWishlistPath(row);&nbsp;<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'checkouts') {&nbsp;<br><span style="white-space:pre">		</span>setCheckoutPath(row);&nbsp;<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'registrations') {<br><span style="white-space:pre">		</span>addRegSelect(row);<br><span style="white-space:pre">		</span>setRegistrationPath(row);<br><span style="white-space:pre">		</span>$('#registration-' + row).change();<br><span style="white-space:pre">	</span>}<span style="white-space:pre">					<br></span><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'leads') {<br><span style="white-space:pre">		</span>setLeadsPath(row);<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'key_page_views') {<br><span style="white-space:pre">		</span>addPageViewsSelect(row);<br><span style="white-space:pre">		</span>setPageViewsPath(row);<br><span style="white-space:pre">		</span>$('#key-page-views-' + row).change();<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'adds_to_cart') {<br><span style="white-space:pre">		</span>setCartAddsPath(row);<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'purchase') {<br><span style="white-space:pre">		</span>setPurchasePath(row);<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	</span>if (category === 'search') {<br><span style="white-space:pre">		</span>setSearchPath(row);<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span>}<br>function setWishlistPath(row) {<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).val('account/wishlist');<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', true);<span style="white-space:pre">						<br></span><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', true);<br>}<br>function setHomePath(row) {<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).val('common/home');<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', true);<span style="white-space:pre">						<br></span><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', true);<br>}<br>function setCheckoutPath(row) {<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).val('checkout/success');<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', true);<br><span style="white-space:pre">	</span>$('#pixel-value-' + row).val('Cart Total');<br><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', true);<br>}<br>function setPurchasePath(row) {<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).val('checkout/success');<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', true);<br><span style="white-space:pre">	</span>$('#pixel-value-' + row).val('Order Total');<br><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', true);<br>}<span style="white-space:pre">				</span><br>function setSearchPath(row) {<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).val('product/search');<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', true);<span style="white-space:pre">						<br></span><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', true);<br>}<br>function setRegistrationPath(row) {<br><span style="white-space:pre">	</span>var registrationselect = $('#registration-' + row).val();<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', false).val('');<br><span style="white-space:pre">		</span>if (registrationselect === 'account') {<br><span style="white-space:pre">			</span>$('#pixel-path-' + row).val('account/success');<br><span style="white-space:pre">			</span>$('#pixel-path-' + row).prop('readonly', true);<br><span style="white-space:pre">			<br></span><span style="white-space:pre">		</span>} else if (registrationselect == 'affiliate') {<br><span style="white-space:pre">			</span>$('#pixel-path-' + row).val('affiliate/success');<br><span style="white-space:pre">			</span>$('#pixel-path-' + row).prop('readonly', true);<br><span style="white-space:pre">		</span>}<span style="white-space:pre">		<br></span>}<br>function addRegSelect(row) {<br><span style="white-space:pre">	</span>html&nbsp; = '&lt;div style="display:inline-block; padding-left:5px;"&gt;';<br><span style="white-space:pre">	</span>html += '&lt;select id="registrations-' + row + '" name="pixel[' + row + '][view]" onchange="setPath2(' + row + ')"&gt;';<br><span style="white-space:pre">	</span>html += '&lt;option value="account"&gt;New Customer&lt;/option&gt; ';<span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>html += '&lt;option value="affiliate"&gt;Affiliate&lt;/option&gt; ';<span style="white-space:pre">						<br></span><span style="white-space:pre">	</span>html += '&lt;/select&gt;&lt;/div&gt;';<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>$('#category-' + row).after(html);<br>}<br>function setLeadsPath(row) {<br>}<br>function setPageViewsPath(row) {<br><span style="white-space:pre">							<br></span>}<br>function setCartAddsPath(row) {<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).val('checkout/cart');<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', true);<br><span style="white-space:pre">	</span>$('#pixel-value-' + row).val('Product Price');<br><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', true);<br>}<br>function addPageViewsSelect(row) {<span style="white-space:pre">						</span>&nbsp; &nbsp;&nbsp;<br><span style="white-space:pre">	</span>html&nbsp; = '&lt;div style="display:inline-block; padding-left:5px;"&gt;';<br><span style="white-space:pre">	</span>html += '&lt;select id="key-page-views-' + row + '" name="pixel[' + row + '][view]" &gt;';<br><span style="white-space:pre">	</span>html += '&lt;option value="product"&gt;Product Page&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '&lt;option value="category"&gt;Category Page&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '&lt;option value="manufacturer"&gt;Manufacturer Page&lt;/option&gt;';<br><span style="white-space:pre">	</span>html += '&lt;option value="information"&gt;Information Page&lt;/option&gt;';<span style="white-space:pre">						<br></span><span style="white-space:pre">	</span>html += '&lt;/select&gt;&lt;/div&gt;';<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>$('#category-' + row).after(html);<span style="white-space:pre">						<br></span>}<span style="white-space:pre">					</span><br>function initRows(row) {<br><span style="white-space:pre">	</span>var category = $('#category-' + row).val();<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category === 'checkouts') {<br><span style="white-space:pre">		</span>setCheckoutPath(row);<br><span style="white-space:pre">	</span>}<span style="white-space:pre">						<br></span><span style="white-space:pre">	<br></span>}<br>function initRegPath(row) {<br><span style="white-space:pre">	</span>addRegSelect(row);<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', true);<br><span style="white-space:pre">	</span>if ($('#pixel-path-' + row).val() === 'account/success') {<br><span style="white-space:pre">		</span>$('#registration-' + row).val('account');<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	</span>if ($('#pixel-path-' + row).val() === 'affiliate/success') {<br><span style="white-space:pre">		</span>$('#registration-' + row).val('affiliate');<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span>}<span style="white-space:pre">					</span><br>function resetInputs(row, category) {<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category != 'registrations') {<br><span style="white-space:pre">		</span>$('#registration-' + row).remove();<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>if (category != 'key_page_views') {<br><span style="white-space:pre">		</span>$('#key-page-views-' + row).remove();<br><span style="white-space:pre">	</span>}<br><span style="white-space:pre">	<br></span><span style="white-space:pre">	</span>$('#pixel-value-' + row).prop('readonly', false).val('');<br><span style="white-space:pre">	</span>$('#pixel-path-' + row).prop('readonly', false).removeClass().val('');<span style="white-space:pre">					<br></span><span style="white-space:pre">	<br></span>}<br>// Document Ready<br>$(function () {<br><span style="white-space:pre">	</span>var pixels = 9;<br><span style="white-space:pre">	</span>for (i = 0; i &lt; pixels; i++) {<br><span style="white-space:pre">		</span>initRows(i);<br><span style="white-space:pre">	</span>}<br>});<span style="white-space:pre">					</span><br>//--&gt;<br>&lt;/script&gt;</pre><p></p><p><b><br></b></p><p><b><br></b></p><p><b><u>Step 6</u></b></p><p><b>File Name</b>&nbsp;:&nbsp;catalog/controller/checkout/success.php</p><p><b>Find this and put below code&nbsp;<font color="#0000ff">before&nbsp;</font>this</b>:&nbsp;</p><pre id="codingBG">if (isset($this-&gt;session-&gt;data['order_id'])) {</pre><p><b>Add the below code</b><b>:</b></p><pre id="codingBG">$this-&gt;load-&gt;model('checkout/order');<br>$this-&gt;data['orderDetails'] = $this-&gt;model_checkout_order-&gt;getOrder($this-&gt;session-&gt;data['order_id']);<span style="white-space:pre">		<br></span>$this-&gt;load-&gt;model('account/order');<br>$products = $this-&gt;model_account_order-&gt;getOrderProducts($this-&gt;session-&gt;data['order_id']);<br>$num_items = count($products);<br>if(count($products)&gt;0) {<br><span style="white-space:pre">	</span>foreach($products as $product) {<span style="white-space:pre">				<br></span><span style="white-space:pre">		</span>$content_ids[] = "'" . $product['product_id'] . "'";<br><span style="white-space:pre">		</span>$content_name[] = "'" . $product['name'] . "'";<br><span style="white-space:pre">	</span>}<br>}&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>$this-&gt;data['content_ids'] = implode(',',$content_ids);<br>$this-&gt;data['content_name'] = implode(',',$content_name);</pre><p></p><p><br></p></div>
+                                            <div class="tab-pane" id="tab-review">
+                      <form class="form-horizontal" id="form-review">
+                        <div id="review"></div>
+                        <h2>Write a review</h2>
+                                        <div class="form-group required">
+                          <div class="col-sm-12">
+                            <label class="control-label" for="input-name">Your Name</label>
+                            <input type="text" name="name" value="" id="input-name" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="form-group required">
+                          <div class="col-sm-12">
+                            <label class="control-label" for="input-review">Your Review</label>
+                            <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                            <div class="help-block"><span class="text-danger">Note:</span> HTML is not translated!</div>
+                          </div>
+                        </div>
+                        <div class="form-group required">
+                          <div class="col-sm-12">
+                            <label class="control-label">Rating</label>
+                            &nbsp;&nbsp;&nbsp; Bad&nbsp;
+                            <input type="radio" name="rating" value="1" />
+                            &nbsp;
+                            <input type="radio" name="rating" value="2" />
+                            &nbsp;
+                            <input type="radio" name="rating" value="3" />
+                            &nbsp;
+                            <input type="radio" name="rating" value="4" />
+                            &nbsp;
+                            <input type="radio" name="rating" value="5" />
+                            &nbsp;Good</div>
+                        </div>
+                        <fieldset>
+          <legend>Captcha</legend>
+          <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-captcha">Enter the code in the box below</label>
+            <div class="col-sm-10">
+              <input type="text" name="captcha" id="input-captcha" class="form-control" />
+              <img src="index.php?route=extension/captcha/basic/captcha" alt="" />
+                  </div>
+              </div>
+        </fieldset>
+        
+                        <div class="buttons clearfix">
+                          <div class="pull-right">
+                            <button type="button" id="button-review" data-loading-text="Loading..." class="btn btn-primary">Continue</button>
+                          </div>
+                        </div>
+                                      </form>
+                    </div>
+                    </div>
+                </div>
+                                        <div class="col-sm-4">
+               </div>
+              </div>
+                            </div>
+
+        <script type="text/javascript">
+        $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
+            $.ajax({
+                url: 'index.php?route=product/product/getRecurringDescription',
+                type: 'post',
+                data: $('input[name=\'product_id\'], input[name=\'quantity\'], select[name=\'recurring_id\']'),
+                dataType: 'json',
+                beforeSend: function() {
+                    $('#recurring-description').html('');
+                },
+                success: function(json) {
+                    $('.alert-dismissible, .text-danger').remove();
+        
+                    if (json['success']) {
+                        $('#recurring-description').html(json['success']);
+                    }
+                }
+            });
+        });
+        //--></script> 
+        <script type="text/javascript">
+        $('#button-cart').on('click', function() {
+            $.ajax({
+                url: 'index.php?route=checkout/cart/add',
+                type: 'post',
+                data: $('#product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
+                dataType: 'json',
+                beforeSend: function() {
+                    $('#button-cart').button('loading');
+                },
+                complete: function() {
+                    $('#button-cart').button('reset');
+                },
+                success: function(json) {
+                    $('.alert-dismissible, .text-danger').remove();
+                    $('.form-group').removeClass('has-error');
+        
+                    if (json['error']) {
+                        if (json['error']['option']) {
+                            for (i in json['error']['option']) {
+                                var element = $('#input-option' + i.replace('_', '-'));
+        
+                                if (element.parent().hasClass('input-group')) {
+                                    element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+                                } else {
+                                    element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+                                }
+                            }
+                        }
+        
+                        if (json['error']['recurring']) {
+                            $('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
+                        }
+        
+                        // Highlight any found errors
+                        $('.text-danger').parent().addClass('has-error');
+                    }
+        
+                    if (json['success']) {
+                        $('.breadcrumb').after('<div class="alert alert-success alert-dismissible">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+        
+                        $('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+        
+                        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        
+                        $('#cart > ul').load('index.php?route=common/cart/info ul li');
+                    }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                }
+            });
+        });
+        //--></script> 
+        <script type="text/javascript">
+        $('.date').datetimepicker({
+            language: 'en-gb',
+            pickTime: false
+        });
+        
+        $('.datetime').datetimepicker({
+            language: 'en-gb',
+            pickDate: true,
+            pickTime: true
+        });
+        
+        $('.time').datetimepicker({
+            language: 'en-gb',
+            pickDate: false
+        });
+        
+        $('button[id^=\'button-upload\']').on('click', function() {
+            var node = this;
+        
+            $('#form-upload').remove();
+        
+            $('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+        
+            $('#form-upload input[name=\'file\']').trigger('click');
+        
+            if (typeof timer != 'undefined') {
+                clearInterval(timer);
+            }
+        
+            timer = setInterval(function() {
+                if ($('#form-upload input[name=\'file\']').val() != '') {
+                    clearInterval(timer);
+        
+                    $.ajax({
+                        url: 'index.php?route=tool/upload',
+                        type: 'post',
+                        dataType: 'json',
+                        data: new FormData($('#form-upload')[0]),
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        beforeSend: function() {
+                            $(node).button('loading');
+                        },
+                        complete: function() {
+                            $(node).button('reset');
+                        },
+                        success: function(json) {
+                            $('.text-danger').remove();
+        
+                            if (json['error']) {
+                                $(node).parent().find('input').after('<div class="text-danger">' + json['error'] + '</div>');
+                            }
+        
+                            if (json['success']) {
+                                alert(json['success']);
+        
+                                $(node).parent().find('input').val(json['code']);
+                            }
+                        },
+                        error: function(xhr, ajaxOptions, thrownError) {
+                            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                        }
+                    });
+                }
+            }, 500);
+        });
+        //--></script> 
+        <script type="text/javascript">
+        $('#review').delegate('.pagination a', 'click', function(e) {
+            e.preventDefault();
+        
+            $('#review').fadeOut('slow');
+        
+            $('#review').load(this.href);
+        
+            $('#review').fadeIn('slow');
+        });
+        
+        $('#review').load('index.php?route=product/product/review&product_id=55');
+        
+        $('#button-review').on('click', function() {
+            $.ajax({
+                url: 'index.php?route=product/product/write&product_id=55',
+                type: 'post',
+                dataType: 'json',
+                data: $("#form-review").serialize(),
+                beforeSend: function() {
+                    $('#button-review').button('loading');
+                },
+                complete: function() {
+                    $('#button-review').button('reset');
+                },
+                success: function(json) {
+                    $('.alert-dismissible').remove();
+        
+                    if (json['error']) {
+                        $('#review').after('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+                    }
+        
+                    if (json['success']) {
+                        $('#review').after('<div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
+        
+                        $('input[name=\'name\']').val('');
+                        $('textarea[name=\'text\']').val('');
+                        $('input[name=\'rating\']:checked').prop('checked', false);
+                    }
+                }
+            });
+        });
+        
+        $(document).ready(function() {
+            $('.thumbnails').magnificPopup({
+                type:'image',
+                delegate: 'a',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+
+
+        </script>
+
+
+
+
+                <p class="aboutPara">Facebook Pixel integration for Opencart</p>
+                <p class="aboutPara2">This Opencart extension will allow you to integrate the
+                    <a class="paraLink" href="https://www.google.com" target="_blank">Facebook Pixel</a>
+                    in your Opencart webshop(s), to track the revenue gained from Facebook ad campaigns. This extension will track the default events: 
+                    <b>ViewContent, AddToCart, Purchase, Search, AddToWishlist, InitiateCheckout, CompleteRegistration.</b>
+                </p>
+                <div class="highlight1">
+                    <i class="fa fa-5x fa-quote-right pull-left"></i>
+                    <p class="quote">The Facebook pixel can be used for three main functions: 1) Building Custom Audiences from your website for remarketing; 2) Optimizing ads for conversions; 3) Tracking conversions and attributing them back to your ads.</p>
+                    <cite>- Facebook Help Center</cite>
+                </div>
+                <p class="aboutPara2">The conversion events will be reported to Facebook with parameters '<b>value</b>', '<b>currency</b>', '<b>content_ids</b>' (= product ID), '<b>content_name</b>' (= product name), '<b>num_items</b>' (for the Purchase and InitiateCheckout events).</p>
+                <a href="https://www.google.com">
+                    <p class="paraLink">Get the extension from the Opencart Extensions Directory</p>
+                </a>
+                <br>
+                <h1 id="aboutHeader">Installation</h1>
+                <p class="aboutPara">Installing the Facebook Pixel integration</p>
+                <p class="aboutPara2">Installation of this extension is very simple. There are two ways you can install the module.</p>
+                <p class="aboutPara">vQmod installation</p>
+                <p class="aboutPara2">Download the 'vQmod' version from the
+                    <a class="paraLink" href="https://www.google.com" target="_blank">Opencart Extension platform</a>.
+                     Next, make sure you have
+                    <a class="paraLink" href="https://www.google.com" target="_blank">  vQmod v2.5.1</a>
+                    installed.
+                </p>
+                <div class="highlight1">
+                    <i class="fa fa-4x fa-upload pull-left"></i>
+                    <p class="quote">Upload the 'fb_conversionpixel.xml' file to the /vqmod/xml/ folder on your webhost.<br>Done!</p>
+                </div>
+                <p class="aboutPara">With the Extension Installer (OC v2.x.x.x)</p>
+                <div class="highlight1">
+                    <i class="fa fa-4x fa-puzzle-piece pull-left"></i>
+                    <p class="quote"> <a id="quoteBlue" href="https://www.google.com">Download the .ocmod.xml file from the Opencart Extension platform</a>
+                        and upload it with the built-in Extension Installer. Next, navigate to <b>Extensions >> Modifications</b> and refresh the modifications cache by clicking the
+                        <button onClick="window.location.reload();" style=" color: #18bc9c;">Refresh</button> button.
+                    </p>
+                </div>
+                <div class="lowerSection">
+                    <h5>Enter Text Here</h5>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+	
+	<div class="container">
+        <div class="row" id="secondContainer">
+            <div class="col-lg-12 col-md-12 col-sm-12" id="thirdButtonL" >
+                <a href="https://purchasetheme.com/Opencart/facebook-pixel-code-opencart" style="height: 49px;" class="center-block btn btn-lg btn-primary">Get the Installation Support</a><br/><br/><br/><br/>
+            </div>            
+        </div>
+    </div>
+	
+</body>
+</html>
